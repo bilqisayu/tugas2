@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            padding: 20px;
+        }
+        .box {
+            width: 450px;
+            border: 2px solid #888;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-top: 8px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 220px;
+            padding: 4px;
+        }
+        textarea {
+            width: 330px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="header">BIODATA</div>
+
+    <form>
+
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label>Sex :</label>
+        <input type="radio" name="gender" id="M" value="M"> <label for="M">M</label>
+        <input type="radio" name="gender" id="F" value="F"> <label for="F">F</label>
+        <br>
+
+        <label><i>Marital Status :</i></label>
+        <input type="checkbox" id="married" name="married"> 
+        <label for="married">Married</label>
+
+        <input type="checkbox" id="children" name="children"> 
+        <label for="children">Children</label>
+        <br><br>
+
+        <label>Hobby :</label><br>
+        <textarea></textarea><br><br>
+
+        <label>Income :</label>
+        <select>
+            <option>under $50k</option>
+            <option>$50k - $100k</option>
+            <option>$100k - $200k</option>
+            <option>above $200k</option>
+        </select><br><br>
+
+        <button type="submit">Validate</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
