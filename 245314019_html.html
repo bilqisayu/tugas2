@@ -1,84 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Biodata</title>
+    <meta charset="UTF-8">
+    <title>Profil Bilqis Ayudia</title>
     <style>
         body {
             font-family: Calibri, sans-serif;
-            padding: 20px;
+            margin: 30px;
+            background-color: #f4f6f9;
         }
-        .box {
-            width: 450px;
-            border: 2px solid #888;
-            padding: 20px;
-        }
-        .header {
+
+        h1 {
             text-align: center;
-            font-size: 26px;
-            font-weight: bold;
-            border-bottom: 2px solid #ccc;
+            color: darkblue;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
             margin-bottom: 20px;
-            padding-bottom: 10px;
         }
-        label {
-            display: inline-block;
-            width: 120px;
-            margin-top: 8px;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
         }
-        input[type="text"], input[type="password"] {
-            width: 220px;
-            padding: 4px;
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
         }
-        textarea {
-            width: 330px;
-            height: 100px;
+
+        th {
+            background-color: lightblue;
+        }
+
+        a {
+            color: darkred;
         }
     </style>
 </head>
 
 <body>
 
-<div class="box">
+    <h1>Profil Singkat Bilqis Ayudia</h1>
 
-    <div class="header">BIODATA</div>
+    <div class="box">
+        <h2>Cerita Tentang Saya</h2>
 
-    <form>
+        <p>
+            Halo! Nama saya <b>Bilqis Ayudia</b>.
+            Saya adalah mahasiswa semester 4 yang sedang belajar
+            <i>pemrograman</i>.
+        </p>
 
-        <label for="name">Name :</label>
-        <span>bilqis</span><br>
+        <p class="center">
+            Saya sangat menyukai
+            <span style="color: blue;">pempek</span> dan
+            <b style="color: green;">es ubi ungu</b>.
+        </p>
 
-        <label for="password">Password :</label>
-        <input type="password" id="password" name="password"><br>
+        <p class="right">
+            Motto hidup saya adalah:
+            <i>"Hiduplah seperti Larry"</i>
+        </p>
+    </div>
 
-        <label>Sex :</label>
-        <input type="radio" name="gender" id="M" value="M"> <label for="M">M</label>
-        <input type="radio" name="gender" id="F" value="F"> <label for="F">F</label>
-        <br>
+    <div class="box">
+        <h2>Link Favorit</h2>
+        <p>
+            Saya sering belajar dari
+            <a href="https://www.kaggle.com" target="_blank">Kaggle</a>
+            dan
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>.
+        </p>
+    </div>
 
-        <label><i>Marital Status :</i></label>
-        <input type="checkbox" id="married" name="married"> 
-        <label for="married">Married</label>
+    <div class="box">
+        <h2>Jadwal Kuliah</h2>
 
-        <input type="checkbox" id="children" name="children"> 
-        <label for="children">Children</label>
-        <br><br>
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Mata Kuliah</th>
+                <th>Jam</th>
+            </tr>
+            <tr>
+                <td>Senin</td>
+                <td>Healing Earth</td>
+                <td>08.00 - 10.00</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>Pembelajaran Mesin</td>
+                <td>13.00 - 18.00</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>Manajemen Informasi</td>
+                <td>13.00 - 15.00</td>
+            </tr>
+        </table>
+    </div>
 
-        <label>Hobby :</label><br>
-        <textarea></textarea><br><br>
+    <div class="box">
+        <h2>Form Kontak</h2>
 
-        <label>Income :</label>
-        <select>
-            <option>under $50k</option>
-            <option>$50k - $100k</option>
-            <option>$100k - $200k</option>
-            <option>above $200k</option>
-        </select><br><br>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama">
+            <br><br>
 
-        <button type="submit">Validate</button>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
 
-    </form>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" rows="4" cols="40"></textarea>
+            <br><br>
 
-</div>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
 
 </body>
 </html>
